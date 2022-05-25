@@ -25,8 +25,11 @@ let ySpeed = 0;
 
 function preload() {
 
-    ships = loadImage('assets/images/ships.png')
-    tiles = loadImage('assets/images/tiles.png')
+    var imageLoader = new ImageLoader();
+    var gameImages = imageLoader.load();
+
+    ships = gameImages.ships;
+    tiles = gameImages.tiles;
     
     settings = loadJSON("settings.json");
 
