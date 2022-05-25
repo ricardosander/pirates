@@ -25,14 +25,15 @@ let ySpeed = 0;
 
 function preload() {
 
-    ships = loadImage('assets/ships.png')
-    tiles = loadImage('assets/tiles.png')
-    // settings = loadJSON("settings.json");
-    // console.log(settings);
+    ships = loadImage('assets/images/ships.png')
+    tiles = loadImage('assets/images/tiles.png')
+    
+    settings = loadJSON("settings.json");
 
-    // toMoveFont = loadFont('assets/images/assets/fontHomeScreen.otf');
+    console.log('Settings:');
+    console.log(settings);
 
-    // window.addEventListener('resize', function () { console.log('resized'); window.location.reload(); });
+    window.addEventListener('resize', function () { console.log('resized'); window.location.reload(); });
 }
 
 function setup() {
